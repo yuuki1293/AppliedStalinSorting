@@ -23,6 +23,7 @@ val ae2Version: String = property("ae2_version").toString()
 val ae2VersionRange: String = property("ae2_version_range").toString()
 val emiVersion: String = property("emi_version").toString()
 val jadeVersion: String = property("jade_version").toString()
+val appliedSortingVersion: String = property("applied_sorting_version").toString()
 val parchmentMinecraftVersion: String = property("parchment_minecraft_version").toString()
 val parchmentMappingsVersion: String = property("parchment_mappings_version").toString()
 val modId: String = property("mod_id").toString()
@@ -121,11 +122,12 @@ neoForge {
 }
 
 dependencies {
-    compileOnly("org.appliedenergistics:appliedenergistics2:$ae2Version:api")
+    compileOnly("org.appliedenergistics:appliedenergistics2:$ae2Version")
     runtimeOnly("org.appliedenergistics:appliedenergistics2:$ae2Version")
 
     runtimeOnly("dev.emi:emi-neoforge:$emiVersion")
     runtimeOnly("maven.modrinth:jade:$jadeVersion")
+    runtimeOnly("maven.modrinth:applied-sorting:$appliedSortingVersion")
 }
 
 tasks.withType<JavaCompile>().configureEach {

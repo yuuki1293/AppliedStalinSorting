@@ -8,6 +8,7 @@ import net.neoforged.fml.common.Mod;
 @Mod(value = AppliedStalinSorting.MODID, dist = Dist.CLIENT)
 @EventBusSubscriber(modid = AppliedStalinSorting.MODID, value = Dist.CLIENT)
 public class AppliedStalinSorting {
+
     public static final String MODID = "appliedstalinsorting";
 
     public AppliedStalinSorting(ModContainer modContainer) {

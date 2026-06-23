@@ -3,7 +3,9 @@
   "minVersion": "0.8",
   "package": "yuuki1293.applied_stalin_sorting.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "MixinRepo"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1
