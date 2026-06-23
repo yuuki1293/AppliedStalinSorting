@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "panmodern:block/pan_core"
+    }
+  }
+}
