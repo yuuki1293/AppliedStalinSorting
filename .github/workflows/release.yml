@@ -27,7 +27,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build
-        run: ./gradlew build preparePublish
+        run: ./gradlew build
 
       - name: Publish
         env:
