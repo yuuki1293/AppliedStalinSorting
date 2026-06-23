@@ -10,7 +10,7 @@ plugins {
     idea
     kotlin("jvm") version "2.2.20"
     id("net.neoforged.moddev") version "2.0.141"
-    id("com.hypherionmc.modutils.modpublisher") version "2.1.+"
+    id("com.hypherionmc.modutils.modpublisher") version "2.2.+"
     id("com.diffplug.spotless") version "8.0.0"
 }
 
@@ -209,9 +209,9 @@ publisher {
         github(System.getenv("GITHUB_TOKEN"))
     }
 
-    setReleaseType(ReleaseType.BETA)
+    setReleaseType(ReleaseType.RELEASE)
     setLoaders(ModLoader.NEOFORGE)
-    setCurseEnvironment(CurseEnvironment.BOTH)
+    setCurseEnvironment(CurseEnvironment.CLIENT)
 
     curseID.set(curseforgeProjectId)
     modrinthID.set(modrinthProjectId)
